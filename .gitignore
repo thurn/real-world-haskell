@@ -1,0 +1,7 @@
+.dist-buildwrapper/
+.project
+*.hi
+*.pdf
+*.tex
+dist/
+out/

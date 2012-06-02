@@ -1,0 +1,32 @@
+name:           real-world-haskell
+version:        0.1
+license:        PublicDomain
+license-file:   UNLICENSE
+author:         Derek Thurn
+maintainer:     Derek Thurn <derek@thurn.ca>
+stability:      experimental
+build-type:     Custom
+cabal-version:  >= 1.6
+build-type:     Simple
+synopsis:       Implmentation of solutions to some of the exercises in the book Real World Haskell
+
+test-suite tests
+  type:            exitcode-stdio-1.0
+  main-is:         Test.hs
+  ghc-options:     -Wall -threaded
+  build-depends:   
+                   base >= 4,
+                   HUnit,
+                   Cabal,
+                   test-framework-hunit,
+                   test-framework
+
+source-repository head
+  type:     git
+  location: http://github.com/thurn/real-world-haskell.git
+  branch:   master
+
+library
+  build-depends:   
+                   base >= 4
+  ghc-options:     -Wall -threaded
